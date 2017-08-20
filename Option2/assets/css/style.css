@@ -1,0 +1,12 @@
+body {
+	background-image: url("../images/starwarsbackground.jpg");
+}
+
+h1, h2, p, btn {
+	color: white;
+}
+
+div {
+	border: 1px white solid;
+	margin: 10px;
+}

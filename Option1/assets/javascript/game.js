@@ -23,6 +23,17 @@ for (var i = 19; i <= 120; i++) {
 var randomN = randomN[Math.floor(Math.random() * randomN.length)];
 console.log(randomN);
 
+function reset() {
+    randomN = []
+    for (var i = 19; i <= 120; i++) {
+    randomN.push(i);
+    }
+    randomN = randomN[Math.floor(Math.random() * randomN.length)];
+    score = 0;
+    $("#score").html(score);
+    $("#randomN").html(randomN);
+    resetCrystals();
+}
 
 // Crystals are each assigned unique numerical value (1-12)
 
@@ -42,6 +53,25 @@ console.log(img3num);
 
 var img4num = crystalValue[Math.floor(Math.random() * crystalValue.length)];
 console.log(img4num);
+
+function resetCrystals() {
+    crystalValue = [];
+    for (var x = 1; x <= 12; x++) {
+    crystalValue.push(x);
+    }
+    
+    img1num = crystalValue[Math.floor(Math.random() * crystalValue.length)];
+    console.log(img1num);
+
+    img2num = crystalValue[Math.floor(Math.random() * crystalValue.length)];
+    console.log(img2num);
+
+    img3num = crystalValue[Math.floor(Math.random() * crystalValue.length)];
+    console.log(img3num);
+
+    img4num = crystalValue[Math.floor(Math.random() * crystalValue.length)];
+    console.log(img4num);
+}
 
 // Begin jQuery
 
@@ -71,9 +101,12 @@ $( document ).ready(function() {
     	$("#score").html(score);
     	 if (score > randomN) {
     	 	losses = losses + 1;
+            reset();
     	 } 
     	 if (score === randomN) {
     	 	wins = wins + 1;
+            randomN = randomN[Math.floor(Math.random() * randomN.length)];
+            reset();
     	 }
     	 $("#wins").html(wins);
     	 $("#losses").html(losses);
@@ -84,9 +117,11 @@ $( document ).ready(function() {
     	$("#score").html(score);
     	if (score > randomN) {
     	    losses = losses + 1;
+            reset();
     	} 
     	if (score === randomN) {
     	 	wins = wins + 1;
+            reset();
     	}
     	$("#wins").html(wins);
     	$("#losses").html(losses);
@@ -97,9 +132,11 @@ $( document ).ready(function() {
     	$("#score").html(score);
     	if (score > randomN) {
     	 	losses = losses + 1;
+            reset();
     	} 
     	if (score === randomN) {
     	 	wins = wins + 1;
+            reset();
     	}
     	$("#wins").html(wins);
     	$("#losses").html(losses);
@@ -110,9 +147,11 @@ $( document ).ready(function() {
     	$("#score").html(score);
     	if (score > randomN) {
     	 	losses = losses + 1;
+            reset();
     	} 
     	if (score === randomN) {
     	 	wins = wins + 1;
+            reset();
     	}
     	$("#wins").html(wins);
     	$("#losses").html(losses);
