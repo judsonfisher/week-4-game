@@ -7,6 +7,34 @@ h1, h2, p, btn {
 }
 
 div {
-	border: 1px white solid;
+	/*border: 1px white solid;*/
 	margin: 10px;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	float: right;
+	margin-right: 20px;
+	/*background-color: gray;*/
+	padding: 10px;
+}
+
+.row {
+	margin-left: 30px;
+	margin-right: 0px;
+	width: 100%;
+}
+
+.title {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.character {
+	border: 1px white solid;
+	background-color: gray;
 }
