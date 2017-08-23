@@ -2,7 +2,7 @@ body {
 	background-image: url("../images/starwarsbackground.jpg");
 }
 
-h1, h2, p, btn {
+h1, h2, p, h4 {
 	color: white;
 }
 
@@ -17,10 +17,11 @@ img {
 }
 
 header {
-	float: right;
 	margin-right: 20px;
 	/*background-color: gray;*/
 	padding: 10px;
+	position: fixed;
+	left: 1000px;
 }
 
 .row {
@@ -37,4 +38,8 @@ header {
 .character {
 	border: 1px white solid;
 	background-color: gray;
+}
+
+.fight {
+	float: right;
 }

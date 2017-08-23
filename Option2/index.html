@@ -11,81 +11,95 @@
 
 <header>
 	<h1 class="title header">Star Wars RPG!</h1>
+	<h4>Click any character to begin</h4>
+	<div>
+		<h2>Fight Section</h2>
+		<button class="btn btn-default" type="submit" id="attack">Attack!</button>
+		<button class="btn btn-default" type="submit" id="reset">Reset</button>
+	 </div>
 </header>
 
 <!-- Character blocks go here -->
 <div class="row">
-	<div class="col-md-2 character">
+	<div class="col-md-2 character" id="char1">
 		<div>
 			<p>Luke Skywalker</p>
 		</div>
 		<div>
-			<img src="assets/images/me.jpg">
+			<img src="assets/images/me.jpg" id="luke">
 		</div>
 		<div>
-			<p>HP: </p>
+			<p>HP: <span id="char1HP"></span></p>
 		</div>
 	</div>
 
-	<div class="col-md-2 character">
+	<div class="col-md-2 character" id="char2">
 		<div>
-			<p>Luke Skywalker</p>
+			<p>Darth Vader</p>
 		</div>
 		<div>
 			<img src="assets/images/me.jpg">
 		</div>
 		<div>
-			<p>HP: </p>
+			<p>HP: <span id="char2HP"></span></p>
 		</div>
 	</div>
 
-	<div class="col-md-2 character">
+	<div class="col-md-2 character" id="char3">
 		<div>
-			<p>Luke Skywalker</p>
+			<p>Obi-Wan</p>
 		</div>
 		<div>
 			<img src="assets/images/me.jpg">
 		</div>
 		<div>
-			<p>HP: </p>
+			<p>HP: <span id="char3HP"></span></p>
 		</div>
 	</div>
 
-	<div class="col-md-2 character">
+	<div class="col-md-2 character" id="char4">
 		<div>
-			<p>Luke Skywalker</p>
+			<p>Han Solo</p>
 		</div>
 		<div>
 			<img src="assets/images/me.jpg">
 		</div>
 		<div>
-			<p>HP: </p>
+			<p>HP: <span id="char4HP"></span></p>
 		</div>
 	</div>
 </div>
+
 <!-- Character blocks end here -->
+<div class="row">
+	<h2 class="title">Your Character:</h2>
+	<div id="charSpot">	
+	</div>
+</div>	
 
-<h2 class="title">Your Character:</h2>
+<div class="row">
+	<h2 class="title">Enemies Available to Attack:</h2>
+	<div id="enemySpot">
+		
+	</div>
+</div>	
+
+<!-- <div>
+	<h2>Fight Section</h2>
+	<button class="btn btn-default" type="submit" id="attack">Attack!</button>
+	<button class="btn btn-default" type="submit" id="reset">Reset</button>
+</div>	
+ -->
+ 
+<div class="row">
+	<h2>Defender</h2>
+	<div>
+	</div>
+</div>	
+
+
 <div>
-	
-</div>
-
-<h2 class="title">Enemies Available to Attack:</h2>
-<div>
-	
-</div>
-
-<h2>Fight Section</h2>
-<button class="btn btn-default" type="submit">Reset</button>
-<h2>Defender</h2>
-
-<div>
-	<!-- Oppoent goes here -->
-</div>
-
-
-<div>
-	<p>This will be a readout</p>
+	<p id="readout">This will be a readout</p>
 </div>
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
